@@ -21,10 +21,10 @@ create table if not exists album (
 	releaseDate date not null
 );
 
-create table if not exists album_artist (
-	id  serial primary key,
-	artist_id integer not null references artist(id),
-	album_id integer not null references album(id)
+create table artist_album (
+    primary key(album_id, artist_id),
+    album_id integer references Album(id) not null,
+    artist_id integer references Artist(id) not null
 );
 
 create table if not exists track (
