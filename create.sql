@@ -10,9 +10,9 @@ create table if not exists artist (
 
 
 create table if not exists artist_genre(
-	id serial primary key,
-	genre_id integer not null references genre(id),
-	artist_id integer not null references artist(id)
+	primary key(artist_id, genre_id),
+    artist_id integer references artist(id) not null,
+    genre_id integer references genre(id) not null
 );
 
 create table if not exists album (
