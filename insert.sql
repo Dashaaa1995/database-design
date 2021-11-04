@@ -1,76 +1,89 @@
-INSERT INTO
-	artist(id, name)
-VALUES
-	(1, 'artist_1'),
-	(2, 'artist_2'),
-	(3, 'artist_3'),
-    (4, 'artist_4'),
-    (5, 'artist_5'),
-    (6, 'artist_6'),
-    (7, 'artist_7'),
-    (8, 'artist_8'),
-    (9, 'artist_9'),
-    (10, 'artist_10'),
-    (11, 'artist_11'),
-    (12, 'artist_12'),
-    (13, 'artist_13'),
-    (14, 'artist_14'),
-    (15, 'artist_15');
-
-
-INSERT INTO
-	genre(id, name)
-VALUES
-    (1, 'genre_1'),
-    (2, 'genre_2'),
-    (3, 'genre_3'),
-    (4, 'genre_4'),
-    (5, 'genre_5');
-    
-
-INSERT INTO
-	album(id, name, releaseDate)
-VALUES
-    (1, 'album_name_1', '1990-12-15'),
-    (2, 'album_name_2', '2010-10-01'),
-    (3, 'album_name_3', '2012-08-16'),
-    (4, 'album_name_4', '2015-07-20'),
-    (5, 'album_name_5', '2018-06-14'),
-    (6, 'album_name_6', '2019-03-10'),
-    (7, 'album_name_7', '2020-05-13'),
-    (8, 'album_name_8', '1986-01-13');
-
-INSERT INTO
-	track(id, name, trackLength)
-VALUES
-    (1, 'track_1', 3.05),
-    (2, 'track_2', 3.10),
-    (3, 'track_3', 4.15),
-    (4, 'track_4', 3.15),
-    (5, 'track_5', 4.25),
-    (6, 'track_6', 5.05),
-    (7, 'track_7', 2.50),
-    (8, 'track_8', 4.00),
-    (9, 'track_9', 5.50),
-    (10, 'track_10', 2.30),
-    (11, 'track_11', 1.55),
-    (12, 'track_12', 4.40),
-    (13, 'track_13', 5.20),
-    (14, 'track_14', 2.45),
-    (15, 'my_14', 2.45),
-    (16, 'my', 1.45);
-
-INSERT INTO
-	collections(id, name, release_year)
-VALUES
-    (1, 'collection_1', '2020-12-15'),
-    (2, 'collection_2', '2019-01-15'),
-    (3, 'collection_3', '2019-02-20'),
-    (4, 'collection_4', '2020-11-15'),
-    (5, 'collection_5', '2021-07-15'),
-    (6, 'collection_6', '2002-08-19'),
-    (7, 'collection_7', '2005-09-18'),
-    (8, 'collection_8', '2001-05-20');
-
-
-
+INSERT INTO artist VALUES ('01','Киркоров');
+INSERT INTO artist VALUES ('02','Агутин');
+INSERT INTO artist VALUES ('03','Леонтьев');
+INSERT INTO artist VALUES ('04','Лобода');
+INSERT INTO artist VALUES ('05','Меладзе');
+INSERT INTO artist VALUES ('06','Варум');
+INSERT INTO artist VALUES ('07','Пугачева');
+INSERT INTO artist VALUES ('08','Михайлов');
+INSERT INTO artist VALUES ('09','Стас Михайлов');
+INSERT INTO genre VALUES ('01','Rock');
+INSERT INTO genre VALUES ('02','DnB');
+INSERT INTO genre VALUES ('03','House');
+INSERT INTO genre VALUES ('04','Techno');
+INSERT INTO genre VALUES ('05','Pop');
+INSERT INTO album VALUES ('01','Nature','1986-11-01');
+INSERT INTO album VALUES ('02','Australia','2020-12-15');
+INSERT INTO album VALUES ('03','Feelings','1960-11-16');
+INSERT INTO album VALUES ('04','Rain','2020-01-25');
+INSERT INTO album VALUES ('05','Summer','2018-05-12');
+INSERT INTO album VALUES ('06','Never','1985-10-10');
+INSERT INTO album VALUES ('07','Emotions','2000-11-20');
+INSERT INTO album VALUES ('08','New York','2001-12-11');
+INSERT INTO album VALUES ('09','New Wales','2019-03-06');
+INSERT INTO track VALUES ('01','Never know','3.1','01');
+INSERT INTO track VALUES ('02','You know this better','3.4','02');
+INSERT INTO track VALUES ('03','Neighbourhood','3.2','03');
+INSERT INTO track VALUES ('04','Village','5.1','04');
+INSERT INTO track VALUES ('05','River','3.2','05');
+INSERT INTO track VALUES ('06','The End','3.1','06');
+INSERT INTO track VALUES ('07','Rainbow','4.1','07');
+INSERT INTO track VALUES ('08','Barrel','4.4','08');
+INSERT INTO track VALUES ('09','How much is the cost','2.2','01');
+INSERT INTO track VALUES ('10','Poison','3.2','02');
+INSERT INTO track VALUES ('11','Milky way','4.3','03');
+INSERT INTO track VALUES ('12','Starship','5.6','04');
+INSERT INTO track VALUES ('13','Friendship','3.2','05');
+INSERT INTO track VALUES ('14','Love','4.1','06');
+INSERT INTO track VALUES ('15','Like movie','4.1','07');
+INSERT INTO track VALUES ('16','My world','5.1','07');
+INSERT INTO track VALUES ('17','Its my life','3.4','08');
+INSERT INTO track VALUES ('18','Its my work','3.0','08');
+INSERT INTO track VALUES ('19','Jungle','2.5','06');
+INSERT INTO track VALUES ('20','Star','4.0','01');
+INSERT INTO track VALUES ('21','Fish','3.1','03');
+INSERT INTO track VALUES ('22','Door','3.3','07');
+INSERT INTO track VALUES ('23','Wind','2.1','02');
+INSERT INTO track VALUES ('24','Water','4.2','05');
+INSERT INTO track VALUES ('25','Enjoy','1.5','09');
+INSERT INTO collections VALUES ('01','Romantic','1986-04-08');
+INSERT INTO collections VALUES ('02','Energetic','2007-04-06');
+INSERT INTO collections VALUES ('03','Positive','1965-11-04');
+INSERT INTO collections VALUES ('04','Relaxing','2021-12-13');
+INSERT INTO collections VALUES ('05','All in one','2019-11-19');
+INSERT INTO collections VALUES ('06','Only POP','1986-08-09');
+INSERT INTO collections VALUES ('07','Best Tracks','1999-08-08');
+INSERT INTO collections VALUES ('08','80s','2002-09-08');
+INSERT INTO collections VALUES ('09','Best 90s','2018-11-17');
+INSERT INTO collections VALUES ('10','Lounge','2020-11-17');
+INSERT INTO track_collection VALUES ('01','04');
+INSERT INTO track_collection VALUES ('02','02');
+INSERT INTO track_collection VALUES ('03','02');
+INSERT INTO track_collection VALUES ('04','07');
+INSERT INTO track_collection VALUES ('05','06');
+INSERT INTO track_collection VALUES ('06','08');
+INSERT INTO track_collection VALUES ('07','01');
+INSERT INTO track_collection VALUES ('08','01');
+INSERT INTO track_collection VALUES ('09','02');
+INSERT INTO track_collection VALUES ('10','03');
+INSERT INTO track_collection VALUES ('11','04');
+INSERT INTO track_collection VALUES ('12','05');
+INSERT INTO track_collection VALUES ('13','06');
+INSERT INTO track_collection VALUES ('14','07');
+INSERT INTO track_collection VALUES ('15','08');
+INSERT INTO artist_album VALUES ('01','08');
+INSERT INTO artist_album VALUES ('02','07');
+INSERT INTO artist_album VALUES ('03','06');
+INSERT INTO artist_album VALUES ('04','05');
+INSERT INTO artist_album VALUES ('05','04');
+INSERT INTO artist_album VALUES ('06','03');
+INSERT INTO artist_album VALUES ('07','02');
+INSERT INTO artist_album VALUES ('08','01');
+INSERT INTO artist_genre VALUES ('01','05');
+INSERT INTO artist_genre VALUES ('02','02');
+INSERT INTO artist_genre VALUES ('03','02');
+INSERT INTO artist_genre VALUES ('04','05');
+INSERT INTO artist_genre VALUES ('05','04');
+INSERT INTO artist_genre VALUES ('01','03');
+INSERT INTO artist_genre VALUES ('02','03');
+INSERT INTO artist_genre VALUES ('03','01');
